@@ -112,7 +112,7 @@ func NewKeyFromMnemonic(mnemonic string, coin, account, chain, address uint32) (
 		return nil, err
 	}
 
-	return NewKeyFromMasterKey(masterKey)
+	return NewKeyFromMasterKey(masterKey, coin, account, chain, address)
 }
 
 func NewKeyFromMasterKey(masterKey *bip32.Key, coin, account, chain, address uint32) (*bip32.Key, error) {
