@@ -11,6 +11,10 @@ import (
 
 const Purpose uint32 = 0x8000002C
 
+//https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki
+//https://github.com/satoshilabs/slips/blob/master/slip-0044.md
+//https://github.com/FactomProject/FactomDocs/blob/master/wallet_info/wallet_test_vectors.md
+
 const (
 	TypeBitcoin               uint32 = 0x80000000
 	TypeTestnet               uint32 = 0x80000001
@@ -103,6 +107,8 @@ const (
 	TypeNavCoin               uint32 = 0x80000082
 	TypeFactomFactoids        uint32 = 0x80000083
 	TypeFactomEntryCredits    uint32 = 0x80000084
+	TypeZcash                 uint32 = 0x80000085
+	TypeLisk                  uint32 = 0x80000086
 )
 
 func NewKeyFromMnemonic(mnemonic string, coin, account, chain, address uint32) (*bip32.Key, error) {
