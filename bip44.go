@@ -109,6 +109,7 @@ const (
 	TypeFactomEntryCredits    uint32 = 0x80000084
 	TypeZcash                 uint32 = 0x80000085
 	TypeLisk                  uint32 = 0x80000086
+	TypeFactomIdentitiy       uint32 = 0x80000119
 )
 
 func NewKeyFromMnemonic(mnemonic string, coin, account, chain, address uint32) (*bip32.Key, error) {
